@@ -1,5 +1,86 @@
+/* =================================
+    Common
+================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c1efff 0%, #ffffff 50%, #d7eacc 100%);
+}
+
+.section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* =================================
+    Header
+================================= */
+.header {
+    background-color: #00b0f0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header__text {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+}
+
+/* =================================
+    Hero
+================================= */
+.hero .inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
 .hero__image img {
     display: block;
-    width: 10%;
+    width: 100px;
     height: auto;
 }
+
+/* =================================
+   About
+================================= */
+
+/* =================================
+   Skills
+================================= */
+
+/* =================================
+   Works
+================================= */
+
+/* =================================
+   Contact
+================================= */
+
+/* =================================
+   Footer
+================================= */
