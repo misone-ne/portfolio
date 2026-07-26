@@ -335,7 +335,80 @@ main {
 /* =================================
     Contact
 ================================= */
+.contact__text {
+    margin: 0 0 36px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
 
+.contact__list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+    padding: 18px 28px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 6px 6px 16px rgba(255, 189, 222, 0.3);
+    color: #404040;
+    text-decoration: none;
+    transition:
+        transform 0.25s,
+        border-color 0.25s,
+        background-color 0.25s,
+        box-shadow 0.25s;
+}
+
+.contact__item:hover {
+    transform: translateY(-4px);
+    border-color: #00b0f0;
+    background-color: rgba(193, 239, 255, 0.75);
+    box-shadow: 10px 12px 24px rgba(255, 189, 222, 0.45);
+}
+
+.contact__item:focus-visible {
+    outline: 3px solid rgba(0, 176, 240, 0.4);
+    outline-offset: 4px;
+}
+
+.contact__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #c1efff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact__icon--github {
+    font-size: 0.8rem;
+}
+
+.contact__label {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.contact__thanks {
+    margin: 40px 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #2e75b6;
+}
 /* =================================
     Footer
 ================================= */
