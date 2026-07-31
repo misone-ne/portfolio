@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Mei SEI Portfolio</title>
 </head>
 <body>
@@ -133,6 +143,7 @@
             </div>
         </div>
     </section>
+
     <section class="section works" id="works">
         <div class="inner">
             <h2 class="section__title">WORKS</h2>
@@ -258,6 +269,101 @@
     </section>
 </main>
 
+<!-- モーダル -->
+<div class="modal" id="modal-flea-market" role="dialog" aria-modal="true" aria-labelledby="modal-flea-market-title" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+
+    <div class="modal__container">
+        <button class="modal__close" type="button" aria-label="モーダルを閉じる" data-modal-close>×</button>
+
+        <div class="modal__content">
+            <header class="modal__header">
+                <p class="modal__number">WORK 01</p>
+                <h2 class="modal__title" id="modal-flea-market-title">
+                    フリマアプリ
+                </h2>
+                <p class="modal__description">
+                    商品の出品・購入・検索・お気に入り登録などに対応した、
+                    フリマサービスを想定したWebアプリケーションです。
+                </p>
+            </header>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">GIF・スクリーンショット</h3>
+                <div class="modal__media">
+                    <div class="modal__gif">GIF</div>
+                    <div class="modal__screenshots">
+                        <div class="modal__screenshot">スクリーンショット①</div>
+                        <div class="modal__screenshot">スクリーンショット②</div>
+                        <div class="modal__screenshot">スクリーンショット③</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">使用技術</h3>
+                <ul class="modal__tags">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                    <li>Stripe</li>
+                    <li>Fortify</li>
+                    <li>Vite</li>
+                    <li>SCSS</li>
+                    <li>PHPUnit</li>
+                </ul>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">実装時に意識したこと</h3>
+                <ul class="modal__points">
+                    <li>
+                        バリデーションエラーメッセージは、ユーザーが入力内容のどこに問題があるかを理解しやすくするためのものだと考え、その目的を意識しながら実装しました。
+                    </li>
+                    <li>
+                        商品検索後も検索条件を保持する要件について、ユーザーが検索条件を少し変更しながら再検索しやすくするためだと理解し、実装しました。
+                    </li>
+                    <li>
+                        メール認証の要件は、認証済みユーザーのみが利用できる安全性を確保するためであることを意識しながら実装しました。
+                    </li>
+                    <li>
+                        PHPUnitを使用し、各機能が要件どおりに動作することを確認しながらテストを実施しました。
+                    </li>
+                </ul>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">開発フロー</h3>
+                <ol class="modal__flow">
+                    <li>要件確認</li>
+                    <li>ER図・データベース設計</li>
+                    <li>画面・機能実装</li>
+                    <li>テスト</li>
+                    <li>README作成</li>
+                </ol>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">ER図</h3>
+                <div class="modal__media">
+                    <p class="modal__placeholder">ER図を配置予定</p>
+                </div>
+            </section>
+
+            <div class="modal__links">
+                <a class="modal__link" href="#" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a class="modal__link" href="#" target="_blank" rel="noopener noreferrer">
+                README
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer></footer>
+<script src="js/main.js"></script>
 </body>
 </html>
