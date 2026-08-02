@@ -427,10 +427,10 @@ main {
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 9;
-    border: 2px dashed #c1efff;
+    overflow: hidden;
     border-radius: 12px;
-    background-color: rgba(193, 239, 255, 0.2);
-    color: #777;
+    background-color: #fff;
+    box-shadow: 6px 6px 16px rgba(255, 189, 222, 0.4);
 }
 
 .modal__screenshots {
@@ -445,10 +445,18 @@ main {
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 10;
-    border: 2px dashed #c1efff;
+    overflow: hidden;
     border-radius: 10px;
-    background-color: rgba(193, 239, 255, 0.15);
-    color: #777;
+    background-color: #fff;
+    box-shadow: 6px 6px 16px rgba(255, 189, 222, 0.3);
+}
+
+.modal__gif img,
+.modal__screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .modal__tags {
