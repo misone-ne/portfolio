@@ -307,8 +307,8 @@
                     <li>Laravel</li>
                     <li>MySQL</li>
                     <li>Docker</li>
-                    <li>Stripe</li>
                     <li>Fortify</li>
+                    <li>Stripe</li>
                     <li>Vite</li>
                     <li>SCSS</li>
                     <li>PHPUnit</li>
@@ -326,6 +326,96 @@
                     </li>
                     <li>
                         メール認証の要件は、認証済みユーザーのみが利用できる安全性を確保するためであることを意識しながら実装しました。
+                    </li>
+                    <li>
+                        PHPUnitを使用し、各機能が要件どおりに動作することを確認しながらテストを実施しました。
+                    </li>
+                </ul>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">開発フロー</h3>
+                <ol class="modal__flow">
+                    <li>要件確認</li>
+                    <li>ER図・DB設計</li>
+                    <li>画面・機能実装</li>
+                    <li>テスト</li>
+                    <li>README作成</li>
+                </ol>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">ER図</h3>
+                <div class="modal__media">
+                    <div class="modal__er">
+                        <img src="images/er-placeholder.png" alt="ER図">
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal__links">
+                <a class="modal__link" href="#" target="_blank" rel="noopener noreferrer">GitHubでソースコードを見る</a>
+                <a class="modal__link" href="#" target="_blank" rel="noopener noreferrer">READMEを見る</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-attendance" role="dialog" aria-modal="true" aria-labelledby="modal-attendance-title" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+
+    <div class="modal__container">
+        <button class="modal__close" type="button" aria-label="モーダルを閉じる" data-modal-close>×</button>
+
+        <div class="modal__content">
+            <header class="modal__header">
+                <p class="modal__number">WORK 02</p>
+                <h2 class="modal__title" id="modal-attendance-title">
+                    勤怠管理アプリ
+                </h2>
+                <p class="modal__description">
+                    勤怠管理・修正申請・承認機能などを備えたWebアプリケーションです。
+                </p>
+            </header>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">GIF・スクリーンショット</h3>
+                <div class="modal__media">
+                    <div class="modal__gif">GIF</div>
+                    <div class="modal__screenshots">
+                        <div class="modal__screenshot">スクリーンショット①</div>
+                        <div class="modal__screenshot">スクリーンショット②</div>
+                        <div class="modal__screenshot">スクリーンショット③</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">使用技術</h3>
+                <ul class="modal__tags">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>Docker</li>
+                    <li>Fortify</li>
+                    <li>Sanctum</li>
+                    <li>Vite</li>
+                    <li>SCSS</li>
+                    <li>PHPUnit</li>
+                </ul>
+            </section>
+
+            <section class="modal__section">
+                <h3 class="modal__section-title">実装時に意識したこと</h3>
+                <ul class="modal__points">
+                    <li>
+                        勤務状況に応じて表示するボタンを切り替える要件について、一般スタッフの誤操作を防ぐためであることを意識しながら実装しました。
+                    </li>
+                    <li>
+                        修正申請中の勤怠は再編集できない要件について、申請内容が承認されるまで変更を防ぎ、データの整合性を保つためであることを意識して実装しました。
+                    </li>
+                    <li>
+                        申請一覧画面で管理者と一般スタッフが同じパスを使用する要件について、認証ミドルウェアで利用者ごとに適切な画面へ遷移させる目的を理解しながら実装しました。
                     </li>
                     <li>
                         PHPUnitを使用し、各機能が要件どおりに動作することを確認しながらテストを実施しました。
