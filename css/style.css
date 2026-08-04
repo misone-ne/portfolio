@@ -349,6 +349,19 @@ main {
     background-color: #00b0f0;
     color: #ffffff;
 }
+
+.works__button--disabled {
+    border-color: #cccccc;
+    background-color: #f5f5f5;
+    color: #999999;
+    cursor: default;
+}
+
+.works__button--disabled:hover {
+    border-color: #cccccc;
+    background-color: #f5f5f5;
+    color: #999999;
+}
 /* =================================
     Modal
 ================================= */
