@@ -11,32 +11,36 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
     <title>M.Haraguchi Portfolio</title>
 </head>
 <body>
-<header class="header">
-    <div class="header__inner">
-        <a class="header__logo header__text" href="#">Miyuki HARAGUCHI</a>
-
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li>
-                    <a class="header__text" href="#about">ABOUT</a>
-                </li>
-                <li>
-                    <a class="header__text" href="#skills">SKILLS</a>
-                </li>
-                <li>
-                    <a class="header__text" href="#works">WORKS</a>
-                </li>
-                <li>
-                    <a class="header__text" href="#contact">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo header__text" href="#">
+                <span>Miyuki</span>
+                <span>HARAGUCHI</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li>
+                        <a class="header__text" href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="header__text" href="#skills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a class="header__text" href="#works">WORKS</a>
+                    </li>
+                    <li>
+                        <a class="header__text" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <main>
     <section class="section hero">
@@ -49,15 +53,14 @@
             </div>
 
             <div class="hero__content">
-                <p class="hero__sub-title">Web Engineer</p>
-
-                <h1 class="hero__title">
-                    Miyuki <span>HARAGUCHI</span> - Portfolio
-                </h1>
-
+                <div class="hero__heading">
+                    <p class="hero__sub-title">Web Engineer</p>
+                    <h1 class="hero__title">
+                        Miyuki <span>HARAGUCHI</span> - Portfolio
+                    </h1>
+                </div>
                 <p class="hero__text">
-                    Laravel・PHPを中心に学習し、
-                    ユーザーにとって使いやすいWebアプリケーションの開発を目指しています。
+                    Laravel・PHPを中心に学習し、ユーザーにとって使いやすいWebアプリケーションの開発を目指しています。
                 </p>
             </div>
         </div>
@@ -116,26 +119,71 @@
             <div class="skills__group">
                 <h3 class="skills__group-title">Skills</h3>
                 <div class="skills__list">
-                    <div class="skills__item">HTML5</div>
-                    <div class="skills__item">CSS3</div>
-                    <div class="skills__item">SCSS</div>
-                    <div class="skills__item">PHP</div>
-                    <div class="skills__item">Laravel</div>
-                    <div class="skills__item">MySQL</div>
-                    <div class="skills__item">Git</div>
-                    <div class="skills__item">GitHub</div>
-                    <div class="skills__item">Docker</div>
-                    <div class="skills__item">VS Code</div>
+                    <div class="skills__item">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-sass-original colored"></i>
+                        <span>SCSS</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-php-plain colored"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-laravel-original colored"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-mysql-original colored"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skills__item">
+                        <i class="devicon-vscode-plain colored"></i>
+                        <span>VS Code</span>
+                    </div>
                 </div>
             </div>
             <div class="skills__group">
                 <h3 class="skills__group-title">Learning</h3>
                 <div class="skills__list">
-                    <div class="skills__item skills__item--learning">JavaScript</div>
-                    <div class="skills__item skills__item--learning">TypeScript</div>
-                    <div class="skills__item skills__item--learning">React</div>
-                    <div class="skills__item skills__item--learning">Next.js</div>
-                    <div class="skills__item skills__item--learning">Tailwind CSS</div>
+                    <div class="skills__item skills__item--learning">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skills__item skills__item--learning">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skills__item skills__item--learning">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skills__item skills__item--learning">
+                        <i class="devicon-nextjs-plain"></i>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skills__item skills__item--learning">
+                        <i class="devicon-tailwindcss-original colored"></i>
+                        <span>Tailwind CSS</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,21 +270,15 @@
                 お問い合わせや制作物の詳細は、以下よりご確認ください。
             </p>
             <div class="contact__list">
-                <a
-                    class="contact__item"
-                    href="mailto:example@example.com"
-                >
-                    <span class="contact__icon" aria-hidden="true">✉</span>
+                <a class="contact__item" href="mailto:misoneko315@gmail.com">
+                    <span class="contact__icon" aria-hidden="true">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
                     <span class="contact__label">E-Mail</span>
                 </a>
-                <a
-                    class="contact__item"
-                    href="https://github.com/ユーザー名"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span class="contact__icon contact__icon--github" aria-hidden="true">
-                        Git
+                <a class="contact__item" href="https://github.com/misone-ne" target="_blank" rel="noopener noreferrer">
+                    <span class="contact__icon" aria-hidden="true">
+                        <i class="fa-brands fa-github"></i>
                     </span>
                     <span class="contact__label">GitHub</span>
                 </a>
@@ -444,7 +486,6 @@
     </div>
 </div>
 
-<footer></footer>
 <script src="js/main.js"></script>
 </body>
 </html>
