@@ -971,3 +971,35 @@ main {
         font-weight: 700;
     }
 }
+
+/* =================================
+    Responsive - Tablet
+================================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section {
+        width: auto;
+        max-width: none;
+        margin: 24px 20px;
+        padding: 32px 40px;
+        box-sizing: border-box;
+    }
+
+    .inner {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Modal flow */
+    .modal__flow {
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .modal__flow li {
+        flex: 1;
+        min-width: 0;
+        min-height: 80px;
+        padding: 8px 6px;
+        font-size: 0.9rem;
+    }
+}
